@@ -9,8 +9,6 @@ const time = () => 30*1000;
 //Genero l'array con i valori random
 const simonArray = randomArrayGenerator(NumofElements, maxElementValue);
 alert(`Simons numbers: ${simonArray}`);
-//debug
-console.log(...simonArray)
 
 setTimeout(startGame, time());
 
