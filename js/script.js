@@ -23,7 +23,7 @@ function startGame(){
     do{
         userInput = parseInt(prompt('inserisci un numero compreso tra 1 e 100'));
         //verifico che l'input sia coerente
-        if( !isNaN(userInput) && (userInput >= 1 && userInput <= 100)){
+        if( !isNaN(userInput) && (userInput >= 1 && userInput <= 100) && !userInputHistory.includes(userInput)){
             userInputHistory.push(userInput);
         }
     }while(userInputHistory.length < 5);
